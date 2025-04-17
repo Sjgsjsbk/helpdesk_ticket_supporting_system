@@ -1,0 +1,113 @@
+#FrmQuery {
+    font-family: Arial, sans-serif;
+    background-color: #ece5dd;
+    margin: 0;
+    padding: 20px;
+    height: 500px;
+}
+
+.chat-container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.chat-row {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.chat-bubble {
+    padding: 10px 15px;
+    border-radius: 10px;
+    max-width: 70%;
+    word-wrap: break-word;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+/* User 1 bubble (outgoing message, green like WhatsApp) */
+.chat-row.user-1 .chat-bubble {
+    background-color: #dcf8c6;
+    margin-left: auto;
+    margin-right: 10px;
+}
+
+/* User 2 bubble (incoming message, light gray like WhatsApp) */
+.chat-row.user-2 .chat-bubble {
+    background-color: #fff;
+    margin-left: 10px;
+    margin-right: auto;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* Time text */
+.time {
+    display: block;
+    text-align: right;
+    font-size: 12px;
+    color: gray;
+    margin-top: 5px;
+}
+
+.chatName {
+    display: block;
+    text-align: left;
+    font-size: 12px;
+    color: gray;
+    margin-top: 5px;
+}
+
+.modal-dialog {
+    max-height: 90vh;
+    /* Set the max height for the modal dialog */
+}
+
+.modal-body {
+    max-height: 60vh;
+    /* Limit the modal body height to make it scrollable */
+    overflow-y: auto;
+    /* Enable vertical scrolling when content overflows */
+}
+
+/* Chat input styles */
+.chat-input-container {
+    position: fixed;
+    bottom: 0px;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    padding: 10px;
+    box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.chat-input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    font-size: 14px;
+    outline: none;
+}
+
+.send-button,
+.attachment-icon {
+    width: 40px;
+    height: 40px;
+    background-color: #34b7f1;
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.send-button img {
+    width: 20px;
+    height: 20px;
+}
